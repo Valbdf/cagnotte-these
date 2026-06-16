@@ -635,19 +635,19 @@
         image: RING_IMAGE,
       },
       {
-        emoji: "💎",
+        emoji: "🏅",
         label: "Palier 2",
-        name: "Bracelet avec gravure",
-        description: "Bracelet avec gravure de la date de soutenance — 65€",
-        target: 120.58,
+        name: "Médaillon gravé",
+        description: "Médaillon gravé Histoire d'Or — environ 140€",
+        target: 195.58,
         color: "#9B7EC8",
       },
       {
         emoji: "🧖‍♀️",
         label: "Palier 3",
         name: "Massage spa",
-        description: "Massage intégral au spa — environ 100€",
-        target: 220.58,
+        description: "Massage intégral au spa — environ 135€",
+        target: 330.58,
         color: "#5A9B7A",
       },
       {
@@ -655,7 +655,7 @@
         label: "Palier 4",
         name: "Billets Europa-Park",
         description: "Billets Europa-Park — 105€",
-        target: 325.58,
+        target: 435.58,
         color: "#E07A52",
       },
       {
@@ -663,7 +663,7 @@
         label: "Palier 5",
         name: "Logement sur place",
         description: "2 nuits sur place (100€/nuit)",
-        target: 525.58,
+        target: 635.58,
         color: "#D4956A",
       },
       {
@@ -671,7 +671,7 @@
         label: "Palier 6",
         name: "Train aller-retour",
         description: "Train aller-retour — 200€",
-        target: 725.58,
+        target: 835.58,
         color: "#4A90D9",
       },
       {
@@ -679,7 +679,7 @@
         label: "Palier 7",
         name: "Baptême de plongée",
         description: "Un baptême de plongée — 80€",
-        target: 805.58,
+        target: 915.58,
         color: "#2ABFBF",
       },
     ];
@@ -760,7 +760,7 @@
         const transform = pos >= 95 ? "translateX(-90%)" : pos <= 5 ? "translateX(-10%)" : "translateX(-50%)";
         return `<div class="pm${reached ? " reached" : ""}" style="left:${pos}%;transform:${transform};">
           <div class="pm-tick"></div>
-          <div class="pm-label">${p.target}€</div>
+          <div class="pm-label">${Math.round(p.target)}€</div>
         </div>`;
       }).join("");
 
